@@ -5,7 +5,7 @@
 # Install
 
 ```bash
-npm install is-base64
+npm install is-base64-workaja
 ```
 
 # Usage
@@ -27,6 +27,8 @@ console.log(isBase64('uuLMhh')); // false
 console.log(isBase64('uuLMhh', {paddingRequired: false})); // true
 console.log(isBase64('')); // true
 console.log(isBase64('', {allowBlank: false})); // false
+console.log(isBase64(null, {allowNull: false})); // false
+console.log(isBase64(null, {allowNull: true})); // true
 ```
 
 # API
