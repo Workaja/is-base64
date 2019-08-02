@@ -39,6 +39,7 @@ console.log(isBase64('', {allowBlank: false})); // false
     - [options.paddingRequired=true] {boolean} - check for padding
     - [options.mime=false] {boolean} - returns true for valid strings with mime
     - [options.allowBlank=true] {boolean} - returns true for empty string
+    - [options.allowNull=true] {boolean} - returns true for null
 
 # License
 
