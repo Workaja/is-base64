@@ -11,6 +11,9 @@
     if (opts.hasOwnProperty('allowBlank') && !opts.allowBlank && v === '') {
       return false
     }
+    if (opts.hasOwnProperty('allowNull') && !opts.allowNull && (v === 'null' || v === null)) {
+      return false
+    }
 
     var regex = '(?:[A-Za-z0-9+\\/]{4})*(?:[A-Za-z0-9+\\/]{2}==|[A-Za-z0-9+\/]{3}=)?';
 
