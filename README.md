@@ -29,6 +29,8 @@ console.log(isBase64('')); // true
 console.log(isBase64('', {allowBlank: false})); // false
 console.log(isBase64(null, {allowNull: false})); // false
 console.log(isBase64(null, {allowNull: true})); // true
+console.log(isBase64('null', {allowNull: true})); // true
+console.log(isBase64('null', {allowNull: false})); // false
 ```
 
 # API
